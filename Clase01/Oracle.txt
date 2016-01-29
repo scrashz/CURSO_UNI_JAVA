@@ -8,8 +8,10 @@ SQL> SELECT  TABLE_NAME  FROM USER_TABLE;
 ::CREAR ESQUEMA::
 un usuario es un esquema, para hacer un esquema primero tienes que crear un a cuenta de usuario; cuando la cuenta de usuario empieza a tener objetos, la cuenta se convierte en un esquema.
 
-
+SQL>clear screen
 SQL>set linesize 400
 SQL>set pagesize 5000
-
+SQL>conn SCOTT/TIGER
+SQL> ALTER USER HR ACCOUNT UNLOCK INDENTIFIED BY HR(DESBLOQUEAR LA CUENTA Y CAMBIA LA CONTRASEÑA A "HR")
+ 
 
