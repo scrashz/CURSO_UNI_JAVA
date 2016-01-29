@@ -1,0 +1,9 @@
+Este es el repositorio de mi curso de Java.
+Que chevre, pense que el curso era de Java, pero estoy aprendindo Git.
+
+Reportes graficos
+Reportes con conexion
+https://github.com/GCORONELC
+\\172.17.3.126
+http://gcoronelc.blogspot.pe/
+Cisco WebEx
