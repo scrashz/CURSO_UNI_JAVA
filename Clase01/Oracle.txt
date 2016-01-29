@@ -1,3 +1,14 @@
+:::OTROSDATOS DEL CURSO:::
+Este es el repositorio de mi curso de Java.
+Que chevre, pense que el curso era de Java, pero estoy aprendindo Git.
+
+Reportes graficos
+Reportes con conexion
+https://github.com/GCORONELC
+\\172.17.3.126
+http://gcoronelc.blogspot.pe/
+Cisco WebEx
+:::INICIANDO CON ORACLE:::
 HR:oracle
 sqlplus “/as sysdba”
 SQL> ALTER USER SYSTEM IDENTIFIED BY “password”;
@@ -13,5 +24,25 @@ SQL>set linesize 400
 SQL>set pagesize 5000
 SQL>conn SCOTT/TIGER
 SQL> ALTER USER HR ACCOUNT UNLOCK INDENTIFIED BY HR(DESBLOQUEAR LA CUENTA Y CAMBIA LA CONTRASEÑA A "HR")
- 
+
+ ::CREAR ESQUEMA UNI: :
+SQL>create user uni;
+SQL>indetified by uni;
+SQL>grant connect, resources to uni; (Asignamos recursos al usuario uni)
+SQL>create table mensaje(id number(5) primary key,
+de varchar2(20), 
+para varchar(20),
+texto varchar2(200));
+SQL>create sequence sq_mensaje; // Para la clave primaria
+SQL>insert into mensaje values(sq_mensaje.nextval, 'Winston', 'todos','Conectado al servidor reotamente')
+
+SQL>column texto a40;
+SQL>commit
+::AVERIGUAR PARAMETROS DE LA BD::
+SQL>conn system/oracle
+SQL>show parameter name
+::CONEXION REMOTA::
+SQL>conn usuario/clave@ip:1521/sid
+SQL>conn uni/uni@172.17.3.126:1521/XE
+
 
