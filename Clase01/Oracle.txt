@@ -1,0 +1,15 @@
+HR:oracle
+sqlplus “/as sysdba”
+SQL> ALTER USER SYSTEM IDENTIFIED BY “password”;
+SQL> CONN HR
+SQL> select   table_name from    all_tables where  owner='HR';
+SQL> SELECT  TABLE_NAME  FROM USER_TABLE;
+
+::CREAR ESQUEMA::
+un usuario es un esquema, para hacer un esquema primero tienes que crear un a cuenta de usuario; cuando la cuenta de usuario empieza a tener objetos, la cuenta se convierte en un esquema.
+
+
+SQL>set linesize 400
+SQL>set pagesize 5000
+
+
